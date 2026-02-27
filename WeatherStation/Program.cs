@@ -9,6 +9,10 @@ public class Program
         using (var myContext = new WeatherStationContext())
         {
             myContext.Database.EnsureCreated();
+            IUserRepository userRepository = new UserRepository(myContext);
+
+            var user = userRepository.GetUser(11);
+            Console.WriteLine(user.Name);
         }
     }
 }

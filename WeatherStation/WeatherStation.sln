@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36603.0 d17.14
+VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation", "WeatherStation.csproj", "{E4115A39-BE2A-48BF-92B9-FD2FE9E2C051}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "..\Database\Database.csproj", "{3344EDF4-D6C4-4A74-8DE5-2D4646BD3C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "..\UserRepository\Repository.csproj", "{7E6CA257-CA2A-4332-8AB6-60E13CF4CE67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3344EDF4-D6C4-4A74-8DE5-2D4646BD3C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3344EDF4-D6C4-4A74-8DE5-2D4646BD3C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3344EDF4-D6C4-4A74-8DE5-2D4646BD3C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6CA257-CA2A-4332-8AB6-60E13CF4CE67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6CA257-CA2A-4332-8AB6-60E13CF4CE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6CA257-CA2A-4332-8AB6-60E13CF4CE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6CA257-CA2A-4332-8AB6-60E13CF4CE67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
