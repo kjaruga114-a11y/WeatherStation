@@ -1,4 +1,5 @@
 using Database;
+using Repository;
 
 namespace WeatherStation;
 
@@ -11,8 +12,10 @@ public class Program
             myContext.Database.EnsureCreated();
             IUserRepository userRepository = new UserRepository(myContext);
 
-            var user = userRepository.GetUser(11);
-            Console.WriteLine(user.Name);
+            var randomUserId = Random.Shared.Next(1000) + 1;
+            var randomUser = (userRepository.GetUser(randomUserId));
+
+            Console.WriteLine(randomUser?.Name?? "User doesn't exist");
         }
     }
 }
